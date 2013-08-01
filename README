@@ -3,4 +3,7 @@ CS143 (Compilers), Summer 2012
 This is a scanner for Decaf (https://parasol.tamu.edu/courses/decaf/students/decafOverview.pdf), an object oriented 
 language similar to Java. 
 
-I use the DoBeforeEachAction() function to keep track of the location of each lexeme. For multi line comments, I use a separate start condition to make sure that the other rules e.g tokenizing keywords such as void, tokenizing ints, etc does not occur for the content of the comments. Otherwise, I pretty much just used a bunch of regular expressions and let flex do the rest.  
+I use the DoBeforeEachAction() function to keep track of the location of each lexeme. For multi line comments, 
+I use a separate start condition to make sure that the other rules e.g tokenizing keywords such as void, tokenizing 
+ints, etc does not occur for the content of the comments. Otherwise, I pretty much just used a bunch of regular 
+expressions and let flex do the rest.  
